@@ -36,16 +36,12 @@ class UneFenetre extends JFrame {
 		threadList = new ArrayList<Thread>();
 		listMobiles = new ArrayList<UnMobile>();
 
-		
 		sem = new semaphoreGeneral(telNbRessources);
 		
 		for(int i = 0; i < nbMobiles; i++) {
 			listMobiles.add(new UnMobile(LARG, HAUT/nbMobiles, 1000, sem));
 			threadList.add(new Thread(listMobiles.get(i)));
 			threadList.get(i).start();
-
-	
-
 			leConteneur.add(listMobiles.get(i));
 
 			
