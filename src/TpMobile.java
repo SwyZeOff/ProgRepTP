@@ -1,5 +1,3 @@
-
-
 public class TpMobile
 {
     public static void main(String[] telsArgs) {
