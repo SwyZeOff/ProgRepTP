@@ -1,3 +1,4 @@
+package TP1;
 import java.awt.*;
 import java.util.concurrent.Semaphore;
 
