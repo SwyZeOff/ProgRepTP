@@ -12,6 +12,7 @@ public class Consommateur extends Thread {
 	public void run() {
 		String m = "";
 		for (int i=0; i<100; i++) {
+			System.out.println("Conso " + i);
 			bal.getMail();
 			try {sleep(1000);}
 			catch(InterruptedException e) {};

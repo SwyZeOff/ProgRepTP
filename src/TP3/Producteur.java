@@ -11,7 +11,7 @@ public class Producteur extends Thread {
 	
 	public void run() {
 		for(int i=0; i<20; i++) {
-			message = "Ceci est le message" + i + "\n";
+			message = "Ceci est le message " + i + "\n";
 			bal.setMail(message);
 		}
 	}
